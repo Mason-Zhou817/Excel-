@@ -1,0 +1,7 @@
+order_id,date,customer,product,category,region,salesperson,quantity,unit_price
+SO-1001,2026-01-05,Acme Retail,Keyboard,Electronics,East,Alice,3,48.5
+SO-1002,2026-01-08,Northwind,Desk Lamp,Home,North,Bob,5,22
+SO-1003,2026-01-15,Acme Retail,USB-C Cable,Electronics,East,Alice,20,6.5
+SO-1004,2026-02-01,Blue Market,Notebook,Office,South,Chen,30,3.2
+SO-1005,2026-02-12,Northwind,Monitor Stand,Office,North,Bob,4,35
+SO-1006,2026-03-03,Sunrise Co,Water Bottle,Home,West,Diana,12,9.9

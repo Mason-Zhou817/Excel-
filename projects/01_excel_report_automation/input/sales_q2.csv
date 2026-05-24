@@ -1,0 +1,7 @@
+order_id,date,customer,product,category,region,salesperson,quantity,unit_price
+SO-1006,2026-03-03,Sunrise Co,Water Bottle,Home,West,Diana,12,9.9
+SO-1007,2026-04-10,Acme Retail,Wireless Mouse,Electronics,East,Alice,8,18.5
+SO-1008,2026-04-21,Blue Market,Printer Paper,Office,South,Chen,40,4.8
+SO-1009,2026-05-02,Northwind,Desk Chair,Office,North,Bob,2,89
+SO-1010,2026-05-09,Sunrise Co,Coffee Mug,Home,West,Diana,16,7.5
+SO-1011,2026-05-13,Acme Retail,Webcam,Electronics,East,Alice,3,62
