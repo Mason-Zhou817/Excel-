@@ -6,5 +6,6 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 .DS_Store
+~$*.xlsx
 
 # Keep portfolio sample outputs so they can be shown to clients.

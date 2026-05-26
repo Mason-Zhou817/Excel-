@@ -24,6 +24,7 @@ pytest
 
 2. **公开数据采集工具**
    - 输入关键词，调用 Hacker News 公开搜索 API，导出结构化 CSV/Excel。
+   - 作品集案例：`projects/02_public_data_collector/PORTFOLIO_CASE_STUDY.md`
    - 运行：
      ```powershell
      python -m freelance_starter.hn_collector --keyword python --keyword automation
