@@ -31,6 +31,7 @@ pytest
 
 3. **API 报表小工具**
    - 调用 Open-Meteo 公开天气 API，把多个城市的实时天气和 3 天预报整理成 Excel。
+   - 作品集案例：`projects/03_api_report_tool/PORTFOLIO_CASE_STUDY.md`
    - 运行：
      ```powershell
      python -m freelance_starter.open_meteo_report
