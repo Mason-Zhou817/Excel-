@@ -1,6 +1,6 @@
 # Python 接单作品集 Starter
 
-这个文件夹把“Python 自动化 + 数据处理 + 简单 API 集成”的接单计划落成了 3 个可运行作品。你可以先用它练手，再把截图、输出文件和演示视频放到 Upwork、Fiverr、程序员客栈、电鸭、猪八戒等平台的个人资料里。
+这个文件夹把“Python 自动化 + 数据处理 + 简单 API 集成”的接单计划落成了 4 个可运行作品。你可以先用它练手，再把截图、输出文件和演示视频放到 Upwork、Fiverr、程序员客栈、电鸭、猪八戒等平台的个人资料里。
 
 ## 快速开始
 
@@ -12,7 +12,7 @@ python -m pip install -r requirements.txt
 pytest
 ```
 
-## 3 个作品
+## 4 个作品
 
 1. **Excel 自动化报表**
    - 合并多个销售表，清洗重复/脏数据，生成 Excel 报表和图表。
@@ -38,9 +38,17 @@ pytest
      python -m freelance_starter.open_meteo_report
      ```
 
+4. **自动发送邮件报表**
+   - 把已有 Excel 报表作为附件，生成邮件预览，或配置 SMTP 后自动发送。
+   - 作品集案例：`projects/04_email_report_sender/PORTFOLIO_CASE_STUDY.md`
+   - 运行：
+     ```powershell
+     python -m freelance_starter.email_report_sender
+     ```
+
 ## 建议学习顺序
 
-1. 先跑通 3 个项目，确认能生成输出文件。
+1. 先跑通 4 个项目，确认能生成输出文件。
 2. 打开每个项目的 README，按“可接单改造”清单改成自己的版本。
 3. 给每个项目录 1 分钟视频：输入、运行、输出、客户能省什么时间。
 4. 用 `docs/proposal_templates.md` 里的模板去投小单。
@@ -50,6 +58,6 @@ pytest
 
 不要写“我会 Python”。改成：
 
-> 我可以把你的 Excel、网页公开数据或第三方系统数据自动整理成可复用报表，减少手工复制、清洗和重复统计。
+> 我可以把你的 Excel、网页公开数据或第三方系统数据自动整理成可复用报表，并自动发送给指定人员，减少手工复制、清洗、统计和邮件分发。
 
-第一批单子优先选 1-3 天内能完成的小项目：Excel 自动化、CSV 清洗、公开 API 数据同步、简单报表生成。
+第一批单子优先选 1-3 天内能完成的小项目：Excel 自动化、CSV 清洗、公开 API 数据同步、简单报表生成、自动邮件发送。
