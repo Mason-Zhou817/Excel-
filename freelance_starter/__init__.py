@@ -5,4 +5,5 @@ __all__ = [
     "email_report_sender",
     "hn_collector",
     "open_meteo_report",
+    "student_manager",
 ]

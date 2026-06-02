@@ -1,0 +1,5 @@
+student_id,name,age,gender,major,phone,email,enrollment_year,status
+2026001,Mason,18,male,AI Engineering,18800000001,mason@example.com,2026,active
+2026002,Alice,19,female,Computer Science,18800000002,alice@example.com,2026,active
+2026003,Bob,20,male,Data Science,18800000003,bob@example.com,2025,active
+2026004,Cindy,18,female,AI Engineering,18800000004,cindy@example.com,2026,active

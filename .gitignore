@@ -11,5 +11,6 @@ __pycache__/
 *.local.env
 projects/*/input/email_settings.env
 !*.example.env
+*.db
 
 # Keep portfolio sample outputs so they can be shown to clients.

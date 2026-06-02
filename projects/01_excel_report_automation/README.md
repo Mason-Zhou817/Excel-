@@ -21,6 +21,8 @@
 - 按 `order_id` 去重，保留最新出现的订单记录。
 - 计算每条订单收入：`quantity * unit_price`。
 - 生成按品类汇总和按月份汇总的数据表。
+- 输出数据质量报告，记录无效日期、异常数量、异常价格和重复订单。
+- 生成客户收入排行表。
 - 输出带多个工作表和柱状图的 Excel 报表。
 
 ## 项目结构
@@ -72,8 +74,10 @@ order_id,date,customer,product,category,region,salesperson,quantity,unit_price
 Excel 文件包含 3 个工作表：
 
 - `cleaned_orders`：清洗后的订单明细。
+- `data_quality`：被过滤或去重的数据质量问题。
 - `summary_by_category`：按品类汇总销量和收入，并带柱状图。
 - `monthly_trend`：按月份汇总订单数、销量和收入。
+- `top_customers`：按客户汇总订单数和收入。
 
 当前样例数据的处理结果：
 
@@ -105,7 +109,7 @@ python -m freelance_starter.excel_report
 成功后终端会显示类似结果：
 
 ```text
-Report created: ...\output\sales_report.xlsx | source rows=12 clean rows=11 categories=3
+Report created: ...\output\sales_report.xlsx | source rows=12 clean rows=11 quality issues=1 categories=3
 ```
 
 ## 自定义输入输出

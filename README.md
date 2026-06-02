@@ -1,6 +1,6 @@
 # Python 自动化接单作品集
 
-这是一个面向接单展示的 Python 自动化作品集。它包含 4 个可运行项目，覆盖 Excel 报表自动化、公开数据采集、API 报表生成和邮件发送，目标是把重复的表格整理、数据同步和报表分发流程变成可复用的小工具。
+这是一个面向接单展示的 Python 自动化作品集。它包含 5 个可运行项目，覆盖 Excel 报表自动化、公开数据采集、API 报表生成、邮件发送和 SQLite 信息管理系统，目标是把重复的表格整理、数据同步、报表分发和基础数据管理流程变成可复用的小工具。
 
 我可以提供的服务方向：
 
@@ -8,6 +8,7 @@
 - 调用公开 API 或客户授权 API，整理成 Excel。
 - 按关键词采集允许访问的公开数据，并输出结构化表格。
 - 把生成好的报表作为邮件附件自动发送给指定人员。
+- 把 Excel/CSV 资料升级成可查询、可统计、可导出的轻量数据库工具。
 - 为重复办公流程制作简单、可运行、可交付的 Python 自动化脚本。
 
 ## 作品列表
@@ -18,6 +19,7 @@
 | 公开数据采集工具 | 按关键词收集公开讨论数据，整理标题、链接和热度 | `hn_stories_report.xlsx` | [查看案例](projects/02_public_data_collector/PORTFOLIO_CASE_STUDY.md) |
 | 天气 API 报表小工具 | 调用公开天气 API，生成多个城市的天气报表 | `weather_report.xlsx` | [查看案例](projects/03_api_report_tool/PORTFOLIO_CASE_STUDY.md) |
 | 自动发送邮件报表 | 把 Excel 报表作为附件生成邮件预览或发送 | `email_preview.eml` | [查看案例](projects/04_email_report_sender/PORTFOLIO_CASE_STUDY.md) |
+| 学生信息管理系统 | 把学生资料保存到 SQLite，支持查询、筛选、统计和导出 | `students_export.csv` | [查看案例](projects/05_student_manager/PORTFOLIO_CASE_STUDY.md) |
 
 ## 项目亮点
 
@@ -25,6 +27,7 @@
 - **可交付**：每个项目都有输入样例、输出文件、README 和作品集文案。
 - **有测试**：使用 `pytest` 验证核心逻辑，避免只做一次性脚本。
 - **有容错**：API 类项目包含超时重试和失败记录。
+- **有数据质量报告**：Excel 项目会输出异常日期、非法数量和重复订单记录。
 - **有安全边界**：邮件项目只提交示例配置，真实密码和授权码不进入仓库。
 
 ## 技术栈
@@ -34,8 +37,9 @@
 - openpyxl
 - requests
 - smtplib / EmailMessage
+- sqlite3
 - pytest
-- CSV / Excel / JSON / SMTP
+- CSV / Excel / JSON / SQLite / SMTP
 
 ## 快速开始
 
@@ -73,6 +77,14 @@ python -m freelance_starter.open_meteo_report
 python -m freelance_starter.email_report_sender
 ```
 
+学生信息管理系统：
+
+```powershell
+python -m freelance_starter.student_manager import-csv
+python -m freelance_starter.student_manager list
+python -m freelance_starter.student_manager stats
+```
+
 ## 目录结构
 
 ```text
@@ -80,13 +92,15 @@ freelance_starter/
 |-- excel_report.py
 |-- hn_collector.py
 |-- open_meteo_report.py
-`-- email_report_sender.py
+|-- email_report_sender.py
+`-- student_manager.py
 
 projects/
 |-- 01_excel_report_automation/
 |-- 02_public_data_collector/
 |-- 03_api_report_tool/
-`-- 04_email_report_sender/
+|-- 04_email_report_sender/
+`-- 05_student_manager/
 
 tests/
 |-- test_excel_report.py
@@ -108,6 +122,7 @@ tests/
 - 公开 API 数据同步到 Excel。
 - 公开关键词数据收集和整理。
 - Excel 报表自动邮件发送。
+- 学生、会员、客户等小型信息管理和 CSV 导入导出。
 
 ## 合规与安全
 
@@ -118,7 +133,7 @@ tests/
 
 ## 学习与展示建议
 
-1. 跑通 4 个项目，确认都能生成输出文件。
+1. 跑通 5 个项目，确认都能生成输出文件。
 2. 为每个项目截图：输入文件、运行命令、输出报表。
 3. 给每个项目录 1 分钟演示视频。
 4. 把 `PORTFOLIO_CASE_STUDY.md` 的文案改成自己的表达。
